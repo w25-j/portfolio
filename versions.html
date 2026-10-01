@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>布丁狗 — 選擇網站版本</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg: #0e0d0c;
+    --surface: #1c1a17;
+    --border: #2e2a25;
+    --text: #f1eee8;
+    --muted: #a39b8f;
+    --accent: #e8a040;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Noto Sans TC", -apple-system, "Segoe UI", sans-serif;
+    padding: 40px 24px;
+  }
+  h1 {
+    font-family: "Noto Serif TC", Georgia, serif;
+    font-size: clamp(1.8rem, 5vw, 2.6rem);
+    margin: 0 0 8px;
+  }
+  p.sub {
+    color: var(--muted);
+    margin: 0 0 40px;
+    text-align: center;
+    line-height: 1.7;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    max-width: 900px;
+    width: 100%;
+  }
+  a.card {
+    display: block;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 26px 22px;
+    text-decoration: none;
+    color: inherit;
+    transition: transform .25s, border-color .25s, box-shadow .25s;
+  }
+  a.card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+    box-shadow: 0 16px 40px -22px rgba(0,0,0,.9);
+  }
+  .tag {
+    display: inline-block;
+    font-size: .7rem;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+  a.card h2 {
+    font-family: "Noto Serif TC", Georgia, serif;
+    font-size: 1.2rem;
+    margin: 0 0 8px;
+  }
+  a.card p {
+    color: var(--muted);
+    font-size: .88rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+  a.card .color {
+    display: block;
+    height: 4px;
+    border-radius: 999px;
+    margin-bottom: 18px;
+  }
+  footer {
+    margin-top: 44px;
+    color: var(--muted);
+    font-size: .8rem;
+    text-align: center;
+  }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1>布丁狗 · 個人網站</h1>
+  <p class="sub">余宥葳 — 選一個風格開始看</p>
+
+  <div class="grid">
+    <a class="card" href="./index.html">
+      <span class="color" style="background:linear-gradient(90deg,#e8a040,#d4684a)"></span>
+      <span class="tag">V1</span>
+      <h2>暖色編輯</h2>
+      <p>琥珀金 × 深炭黑，像深夜調酒廳。</p>
+    </a>
+
+    <a class="card" href="./v2-cyber.html">
+      <span class="color" style="background:linear-gradient(90deg,#00f0ff,#ff00aa)"></span>
+      <span class="tag">V2</span>
+      <h2>賽博龐克</h2>
+      <p>霓虹光暈、暗色未來感。</p>
+    </a>
+
+    <a class="card" href="./v3-minimal.html">
+      <span class="color" style="background:linear-gradient(90deg,#c98428,#8a7060)"></span>
+      <span class="tag">V3</span>
+      <h2>極簡清新</h2>
+      <p>大量留白、細膩排版。</p>
+    </a>
+
+    <a class="card" href="./v4-playful.html">
+      <span class="color" style="background:linear-gradient(90deg,#ff6b6b,#4ecdc4)"></span>
+      <span class="tag">V4</span>
+      <h2>活潑彩色</h2>
+      <p>珊瑚紅 × 奶油暖色。</p>
+    </a>
+  </div>
+
+  <footer>© 2026 布丁狗</footer>
+</body>
+</html>

@@ -1,0 +1,14 @@
+# Build / packaging artifacts
+*.zip
+
+# Local server log
+*.log
+
+# Editor / OS cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Node (not used now, safe to keep)
+node_modules/
